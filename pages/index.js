@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p>
-          Lisätietoja: <a href="mailto:info@ennustin.fi">info@ennustin.fi</a>
+          Lisätietoja: <a href="mailto:info@autua.fi">info@autua.fi</a>
         </p>
       </main>
 

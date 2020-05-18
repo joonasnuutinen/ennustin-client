@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div
+  className="jsx-2506720262 container"
+>
+  <main
+    className="jsx-2506720262"
+  >
+    <img
+      alt="Ennustin"
+      className="jsx-2506720262 front-logo"
+      src="/ennustin.svg"
+    />
+    <p
+      className="jsx-2506720262 description"
+    >
+      Pilvipohjainen työkalu asioiden ennustamiseen
+    </p>
+    <p
+      className="jsx-2506720262"
+    >
+      Lisätietoja: 
+      <a
+        className="jsx-2506720262"
+        href="mailto:info@autua.fi"
+      >
+        info@autua.fi
+      </a>
+    </p>
+  </main>
+  <footer
+    className="jsx-2506720262"
+  >
+    Palvelun tarjoaa
+     
+    <a
+      className="jsx-2506720262"
+      href="https://autua.fi"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Autua"
+        className="jsx-2506720262 inline-logo"
+        src="/autua.svg"
+      />
+    </a>
+  </footer>
+</div>
+`;

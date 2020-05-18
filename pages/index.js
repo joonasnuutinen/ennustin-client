@@ -1,36 +1,94 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
         <title>Ennustin</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="/icon/apple-icon-57x57.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/icon/apple-icon-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="72x72"
+          href="/icon/apple-icon-72x72.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/icon/apple-icon-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="/icon/apple-icon-114x114.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/icon/apple-icon-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="/icon/apple-icon-144x144.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href="/icon/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icon/apple-icon-180x180.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icon/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/icon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/icon/favicon-16x16.png"
+        />
         <link rel="manifest" href="/icon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+        <meta
+          name="msapplication-TileImage"
+          content="/icon/ms-icon-144x144.png"
+        />
         <meta name="theme-color" content="#ffffff" />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
-        <img
-          className="front-logo"
-          alt="Ennustin"
-          src="/ennustin.svg"
-        />
+        <img className="front-logo" alt="Ennustin" src="/ennustin.svg" />
 
         <p className="description">
           Pilvipohjainen työkalu asioiden ennustamiseen
@@ -42,12 +100,8 @@ export default function Home() {
       </main>
 
       <footer>
-        Palvelun tarjoaa{' '}
-        <a
-          href="https://autua.fi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        Palvelun tarjoaa{" "}
+        <a href="https://autua.fi" target="_blank" rel="noopener noreferrer">
           <img src="/autua.svg" alt="Autua" className="inline-logo" />
         </a>
       </footer>
@@ -77,8 +131,8 @@ export default function Home() {
 
         main,
         footer {
-          padding-left: .5rem;
-          padding-right: .5rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
         }
 
         main,
@@ -149,7 +203,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: 'Source Sans Pro', sans-serif;
+          font-family: "Source Sans Pro", sans-serif;
         }
 
         * {
@@ -157,5 +211,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }

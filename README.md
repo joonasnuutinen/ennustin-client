@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/joonasnuutinen/ennustin-client.svg?branch=master)](https://travis-ci.com/joonasnuutinen/ennustin-client)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -1,8 +1,12 @@
+import { useFetchUser } from "../lib/user";
 import Head from "next/head";
+import Layout from "../components/layout";
 
 export default function Home() {
+  const { user, loading } = useFetchUser();
+
   return (
-    <div className="container">
+    <Layout user={user} loading={loading}>
       <Head>
         <title>Ennustin</title>
         <link
@@ -107,14 +111,6 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         main {
           width: 100%;
           padding-top: 5rem;
@@ -124,8 +120,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background: #333;
-          background: linear-gradient(45deg, #222 0%, #444 100%);
           font-weight: 300;
         }
 
@@ -147,10 +141,10 @@ export default function Home() {
         footer {
           width: 100%;
           height: 60px;
-          border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
           align-items: center;
+          background: white;
         }
 
         footer img {
@@ -197,19 +191,6 @@ export default function Home() {
           height: 1em;
         }
       `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: "Source Sans Pro", sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </Layout>
   );
 }

@@ -91,104 +91,32 @@ export default function Home() {
         />
       </Head>
 
-      <main>
-        <img className="front-logo" alt="Ennustin" src="/ennustin.svg" />
+      <main className="flex flex-col flex-1 justify-center items-center w-full py-20 px-2 font-light">
+        <img className="w-full max-w-sm" alt="Ennustin" src="/ennustin.svg" />
 
-        <p className="description">
+        <p className="py-4 text-2xl">
           Pilvipohjainen työkalu asioiden ennustamiseen
         </p>
 
         <p>
-          Lisätietoja: <a href="mailto:info@autua.fi">info@autua.fi</a>
+          Lisätietoja:{" "}
+          <a className="font-normal" href="mailto:info@autua.fi">
+            info@autua.fi
+          </a>
         </p>
       </main>
 
-      <footer>
+      <footer className="flex justify-center items-center h-16 w-full px-2 bg-white">
         Palvelun tarjoaa{" "}
         <a href="https://autua.fi" target="_blank" rel="noopener noreferrer">
-          <img src="/autua.svg" alt="Autua" className="inline-logo" />
+          <img src="/autua.svg" alt="Autua" className="ml-2 h-4" />
         </a>
       </footer>
 
       <style jsx>{`
-        main {
-          width: 100%;
-          padding-top: 5rem;
-          padding-bottom: 5rem;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-weight: 300;
-        }
-
-        main,
-        footer {
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
-        }
-
         main,
         main a {
           color: #dee8fc;
-        }
-
-        main a {
-          font-weight: 400;
-        }
-
-        footer {
-          width: 100%;
-          height: 60px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: white;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          text-decoration: none;
-        }
-
-        a:hover {
-          text-decoration: underline;
-        }
-
-        .front-logo {
-          width: 100%;
-          max-width: 400px;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          padding: 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .inline-logo {
-          height: 1em;
         }
       `}</style>
     </Layout>

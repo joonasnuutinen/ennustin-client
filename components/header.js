@@ -13,7 +13,7 @@ function Header({ user, loading }) {
                     <a>Profiili</a>
                   </Link>
                 </li>
-                <li>
+                <li className="ml-auto">
                   <a href="/api/logout">Kirjaudu ulos</a>
                 </li>
               </>

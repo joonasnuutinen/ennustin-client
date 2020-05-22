@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: #333;
+    background: linear-gradient(45deg, #222 0%, #444 100%);
+    @apply font-sans;
+}
+
 a {
     text-decoration: none;
 }

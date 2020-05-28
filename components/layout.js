@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./header";
+import PropTypes from "prop-types";
 
 function Layout({ user, loading = false, children }) {
   return (
@@ -16,5 +17,10 @@ function Layout({ user, loading = false, children }) {
     </>
   );
 }
+Layout.propTypes = {
+  user: PropTypes.object,
+  loading: PropTypes.bool.isRequired,
+  children: PropTypes.node,
+};
 
 export default Layout;

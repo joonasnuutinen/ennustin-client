@@ -9,7 +9,7 @@ function Layout({ user, loading = false, dashboard = true, children }) {
         <title>Next.js with Auth0</title>
       </Head>
 
-      <Header user={user} loading={loading} transparent={!dashboard} />
+      <Header user={user} loading={loading} dashboard={dashboard} />
 
       <div className="flex flex-col justify-center items-center min-h-screen">
         {children}

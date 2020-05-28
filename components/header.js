@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-function Header({ user, loading, transparent = false }) {
-  const additionalClasses = transparent ? "" : " bg-ennustin-gray";
+function Header({ user, loading, dashboard = true }) {
+  const additionalClasses = dashboard ? " bg-ennustin-gray" : "";
   return (
     <header
       className={
@@ -38,7 +38,7 @@ function Header({ user, loading, transparent = false }) {
 Header.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
-  transparent: PropTypes.bool,
+  dashboard: PropTypes.bool,
 };
 
 export default Header;

@@ -3,6 +3,8 @@ import Header from "./header";
 import PropTypes from "prop-types";
 
 function Layout({ user, loading = false, dashboard = true, children }) {
+  const dashboardStyles = dashboard ? " pt-12" : "";
+
   return (
     <>
       <Head>
@@ -11,7 +13,12 @@ function Layout({ user, loading = false, dashboard = true, children }) {
 
       <Header user={user} loading={loading} dashboard={dashboard} />
 
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div
+        className={
+          "flex flex-col justify-center items-center min-h-screen" +
+          dashboardStyles
+        }
+      >
         {children}
       </div>
     </>

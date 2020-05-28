@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
 function Header({ user, loading, dashboard = true }) {
-  const dashboardStyles = dashboard ? " bg-ennustin-gray" : "";
+  const dashboardStyles = dashboard ? " fixed bg-ennustin-gray" : "";
   return (
     <header
       className={
-        "flex justify-center items-center h-12 px-2 text-white" +
+        "flex justify-center items-center w-full h-12 px-2 text-white" +
         dashboardStyles
       }
     >
@@ -13,7 +13,7 @@ function Header({ user, loading, dashboard = true }) {
         (dashboard && user ? (
           <>
             <div className="block lg:invisible mr-auto">
-              <button className="flex items-center text-white">
+              <button className="flex items-center text-white focus:outline-none focus:shadow-outline">
                 <svg
                   className="fill-current h-6 w-6"
                   viewBox="0 0 20 20"

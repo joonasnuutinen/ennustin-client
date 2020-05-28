@@ -6,7 +6,7 @@ export default function Home() {
   const { user, loading } = useFetchUser();
 
   return (
-    <Layout user={user} loading={loading}>
+    <Layout user={user} loading={loading} dashboard={false}>
       <Head>
         <title>Ennustin</title>
         <link

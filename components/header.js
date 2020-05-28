@@ -43,7 +43,6 @@ function Header({ user, loading }) {
     </header>
   );
 }
-
 Header.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,

@@ -1,51 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders homepage unchanged 1`] = `
-<div
-  className="jsx-3523023407 container"
->
-  <main
-    className="jsx-3523023407"
+Array [
+  <header
+    className="flex justify-center items-center w-full h-12 px-2 text-white"
+  />,
+  <div
+    className="flex flex-col justify-center items-center min-h-screen"
   >
-    <img
-      alt="Ennustin"
-      className="jsx-3523023407 front-logo"
-      src="/ennustin.svg"
-    />
-    <p
-      className="jsx-3523023407 description"
-    >
-      Pilvipohjainen työkalu asioiden ennustamiseen
-    </p>
-    <p
-      className="jsx-3523023407"
-    >
-      Lisätietoja: 
-      <a
-        className="jsx-3523023407"
-        href="mailto:info@autua.fi"
-      >
-        info@autua.fi
-      </a>
-    </p>
-  </main>
-  <footer
-    className="jsx-3523023407"
-  >
-    Palvelun tarjoaa
-     
-    <a
-      className="jsx-3523023407"
-      href="https://autua.fi"
-      rel="noopener noreferrer"
-      target="_blank"
+    <main
+      className="jsx-2035999944 flex flex-col flex-1 justify-center items-center w-full pb-20 px-2 font-light"
     >
       <img
-        alt="Autua"
-        className="jsx-3523023407 inline-logo"
-        src="/autua.svg"
+        alt="Ennustin"
+        className="jsx-2035999944 w-full max-w-sm"
+        src="/ennustin.svg"
       />
-    </a>
-  </footer>
-</div>
+      <p
+        className="jsx-2035999944 py-8 text-center text-2xl"
+      >
+        Pilvipohjainen työkalu asioiden ennustamiseen
+      </p>
+      <p
+        className="jsx-2035999944"
+      >
+        Lisätietoja:
+         
+        <a
+          className="jsx-2035999944 font-normal"
+          href="mailto:info@autua.fi"
+        >
+          info@autua.fi
+        </a>
+      </p>
+    </main>
+    <footer
+      className="jsx-2035999944 flex justify-center items-center h-16 w-full px-2 bg-white"
+    >
+      Palvelun tarjoaa
+       
+      <a
+        className="jsx-2035999944"
+        href="https://autua.fi"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Autua"
+          className="jsx-2035999944 ml-2 h-4"
+          src="/autua.svg"
+        />
+      </a>
+    </footer>
+  </div>,
+]
 `;

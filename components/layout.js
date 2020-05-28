@@ -27,7 +27,7 @@ function Layout({ user, loading = false, dashboard = true, children }) {
 Layout.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool.isRequired,
-  dashboard: PropTypes.bool.isRequired,
+  dashboard: PropTypes.bool,
   children: PropTypes.node,
 };
 

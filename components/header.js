@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
 function Header({ user, loading, dashboard = true }) {
-  const additionalClasses = dashboard ? " bg-ennustin-gray" : "";
+  const dashboardStyles = dashboard ? " bg-ennustin-gray" : "";
   return (
     <header
       className={
         "flex justify-center items-center h-12 px-2 text-white" +
-        additionalClasses
+        dashboardStyles
       }
     >
       {!loading &&
-        (user ? (
+        (dashboard && user ? (
           <>
             <div className="block lg:invisible mr-auto">
               <button className="flex items-center text-white">
@@ -27,6 +27,10 @@ function Header({ user, loading, dashboard = true }) {
             <img className="h-6" src="/logo.svg" />
             <div className="w-6 ml-auto invisible" />
           </>
+        ) : user ? (
+          <a className="ml-auto" href="/profile">
+            Profiili
+          </a>
         ) : (
           <a className="ml-auto" href="/api/login">
             Kirjaudu

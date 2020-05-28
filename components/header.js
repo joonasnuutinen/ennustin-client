@@ -5,7 +5,7 @@ function Header({ user, loading }) {
   return (
     <header className="px-2 text-white">
       <nav className="my-6">
-        <ul className="flex ml-0 pl-0 list-none">
+        <ul className="flex">
           {!loading &&
             (user ? (
               <>

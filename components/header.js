@@ -14,15 +14,6 @@ function Header({ user, loading }) {
                     <a>Profiili</a>
                   </Link>
                 </li>
-                {user.isAdmin() && (
-                  <>
-                    <li>
-                      <Link href="/profile?admin=true">
-                        <a>Admin stuff!</a>
-                      </Link>
-                    </li>
-                  </>
-                )}
                 <li className="ml-auto">
                   <a href="/api/logout">Kirjaudu ulos</a>
                 </li>

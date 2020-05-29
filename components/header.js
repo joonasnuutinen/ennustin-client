@@ -1,12 +1,18 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-function Header({ user, loading, dashboard = true }) {
+function Header({
+  user,
+  loading,
+  dashboard = true,
+  navToggled,
+  setNavToggled,
+}) {
   const dashboardStyles = dashboard ? " fixed bg-ennustin-gray" : "";
   return (
     <header
       className={
-        "flex justify-center items-center w-full h-12 px-2 text-white" +
+        "flex justify-center items-center w-full h-12 px-2 text-white z-10" +
         dashboardStyles
       }
     >
@@ -14,7 +20,10 @@ function Header({ user, loading, dashboard = true }) {
         (dashboard && user ? (
           <>
             <div className="block lg:invisible mr-auto">
-              <button className="flex items-center text-white focus:outline-none focus:shadow-outline">
+              <button
+                className="flex items-center text-white focus:outline-none focus:shadow-outline"
+                onClick={() => setNavToggled(!navToggled)}
+              >
                 <svg
                   className="fill-current h-6 w-6"
                   viewBox="0 0 20 20"
@@ -44,6 +53,8 @@ Header.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
   dashboard: PropTypes.bool,
+  navToggled: PropTypes.bool,
+  setNavToggled: PropTypes.func,
 };
 
 export default Header;

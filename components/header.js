@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 function Header({ user, loading, dashboard = true }) {
@@ -28,9 +29,9 @@ function Header({ user, loading, dashboard = true }) {
             <div className="w-6 ml-auto invisible" />
           </>
         ) : user ? (
-          <a className="ml-auto" href="/profile">
-            Profiili
-          </a>
+          <Link href="/profile">
+            <a className="ml-auto">Profiili</a>
+          </Link>
         ) : (
           <a className="ml-auto" href="/api/login">
             Kirjaudu

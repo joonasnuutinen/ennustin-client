@@ -38,7 +38,7 @@ function Header({
             <div className="w-6 ml-auto invisible" />
           </>
         ) : user ? (
-          <Link href="/profile">
+          <Link href="/profiili">
             <a className="ml-auto">Profiili</a>
           </Link>
         ) : (

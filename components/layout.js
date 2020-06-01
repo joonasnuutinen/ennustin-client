@@ -6,12 +6,29 @@ import { useState } from "react";
 
 function Layout({ user, loading = false, dashboard = true, children }) {
   const [navToggled, setNavToggled] = useState(false);
-  const dashboardStyles = dashboard ? " pt-12" : "";
+  const dashboardStyles = dashboard ? " pt-12 sm:pl-40" : "";
 
   return (
     <>
       <Head>
-        <title>Next.js with Auth0</title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <Header

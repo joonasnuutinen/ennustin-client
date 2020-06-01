@@ -19,7 +19,7 @@ function Header({
       {!loading &&
         (dashboard && user ? (
           <>
-            <div className="block lg:invisible mr-auto">
+            <div className="block sm:invisible mr-auto">
               <button
                 className="flex items-center text-white focus:outline-none focus:shadow-outline"
                 onClick={() => setNavToggled(!navToggled)}

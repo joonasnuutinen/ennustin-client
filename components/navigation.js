@@ -2,11 +2,11 @@ import NavItem from "./navItem";
 import PropTypes from "prop-types";
 
 function Navigation({ toggled = true }) {
-  const visibility = toggled ? "" : " hidden";
+  const visibility = toggled ? "" : " hidden sm:flex";
   return (
     <nav
       className={
-        "fixed flex flex-col min-w-1/2 h-screen pt-16 px-4 bg-ennustin-gray-lighter text-white" +
+        "fixed flex flex-col h-screen pt-16 pl-4 w-40 bg-ennustin-gray-lighter text-white" +
         visibility
       }
     >

@@ -3,10 +3,14 @@
 import { useFetchUser } from "../lib/user";
 import Layout from "../components/layout";
 import PropTypes from "prop-types";
+import Head from "next/head";
 
 function ProfileCard({ user }) {
   return (
     <>
+      <Head>
+        <title>Profiili</title>
+      </Head>
       <h1>Profiili</h1>
 
       <div>

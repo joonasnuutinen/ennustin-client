@@ -14,10 +14,7 @@ function ProfileCard({ user }) {
       <h1>Profiili</h1>
 
       <div>
-        <h3>Profile (client rendered)</h3>
-        <img src={user.picture} alt="user picture" />
-        <p>nickname: {user.nickname}</p>
-        <p>name: {user.name}</p>
+        <p>{user.name}</p>
         {user.isAdmin() && (
           <>
             <p>Admin</p>

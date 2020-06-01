@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function NavItem({ href, text, link = true }) {
   return (
-    <li className="my-2">
+    <li className="mb-4">
       {link ? (
         <Link href={href}>
           <a>{text}</a>

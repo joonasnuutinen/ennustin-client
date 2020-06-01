@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function Layout({ user, loading = false, dashboard = true, children }) {
   const [navToggled, setNavToggled] = useState(false);
-  const dashboardStyles = dashboard ? " pt-12 sm:pl-40" : "";
+  const dashboardStyles = dashboard ? " pt-16 sm:ml-40 px-2 bg-white" : "";
 
   return (
     <>
@@ -41,14 +41,7 @@ function Layout({ user, loading = false, dashboard = true, children }) {
 
       {!loading && dashboard && user && <Navigation toggled={navToggled} />}
 
-      <div
-        className={
-          "flex flex-col justify-center items-center min-h-screen" +
-          dashboardStyles
-        }
-      >
-        {children}
-      </div>
+      <div className={"min-h-screen" + dashboardStyles}>{children}</div>
     </>
   );
 }

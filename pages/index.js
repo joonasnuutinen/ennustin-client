@@ -9,10 +9,6 @@ export default function Home() {
     <Layout user={user} loading={loading} dashboard={false}>
       <Head>
         <title>Ennustin</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <main className="flex flex-col flex-1 justify-center items-center w-full pb-20 px-2 font-light">

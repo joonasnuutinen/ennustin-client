@@ -6,7 +6,7 @@ Array [
     className="flex justify-center items-center w-full h-12 px-2 text-white z-10"
   />,
   <div
-    className="flex flex-col justify-center items-center min-h-screen"
+    className="min-h-screen"
   >
     <main
       className="jsx-2035999944 flex flex-col flex-1 justify-center items-center w-full pb-20 px-2 font-light"
@@ -52,6 +52,19 @@ Array [
         />
       </a>
     </footer>
+  </div>,
+]
+`;
+
+exports[`renders profile page unchanged 1`] = `
+Array [
+  <header
+    className="flex justify-center items-center w-full h-12 px-2 text-white z-10 fixed bg-ennustin-gray"
+  />,
+  <div
+    className="min-h-screen pt-16 sm:ml-40 px-2 bg-white"
+  >
+    Ladataan...
   </div>,
 ]
 `;

@@ -8,9 +8,6 @@ import Head from "next/head";
 function ProfileCard({ user }) {
   return (
     <>
-      <Head>
-        <title>Profiili</title>
-      </Head>
       <h1>Profiili</h1>
 
       <div>
@@ -32,9 +29,14 @@ function Profile() {
   const { user, loading } = useFetchUser({ required: true });
 
   return (
-    <Layout user={user} loading={loading}>
-      {loading ? <>Ladataan...</> : <ProfileCard user={user} />}
-    </Layout>
+    <>
+      <Head>
+        <title>Profiili</title>
+      </Head>
+      <Layout user={user} loading={loading}>
+        {loading ? <>Ladataan...</> : <ProfileCard user={user} />}
+      </Layout>
+    </>
   );
 }
 

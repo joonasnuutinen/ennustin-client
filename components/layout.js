@@ -41,7 +41,9 @@ function Layout({ user, loading = false, dashboard = true, children }) {
         setNavToggled={setNavToggled}
       />
 
-      {!loading && dashboard && user && <Navigation toggled={navToggled} />}
+      {!loading && dashboard && user && (
+        <Navigation user={user} toggled={navToggled} />
+      )}
 
       <div className={"min-h-screen" + dashboardStyles}>{children}</div>
     </>

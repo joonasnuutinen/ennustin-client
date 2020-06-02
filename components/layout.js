@@ -6,7 +6,9 @@ import { useState } from "react";
 
 function Layout({ user, loading = false, dashboard = true, children }) {
   const [navToggled, setNavToggled] = useState(false);
-  const dashboardStyles = dashboard ? " pt-16 sm:ml-40 px-2 bg-white" : "";
+  const dashboardStyles = dashboard
+    ? " pt-16 sm:ml-40 px-2 bg-white"
+    : " flex flex-col";
 
   return (
     <>

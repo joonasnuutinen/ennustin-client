@@ -11,7 +11,7 @@ export default function Home() {
         <title>Ennustin</title>
       </Head>
 
-      <main className="flex flex-col flex-1 justify-center items-center w-full pb-20 px-2 font-light">
+      <main className="flex flex-col flex-1 justify-center items-center w-full py-20 px-2 font-light">
         <img className="w-full max-w-sm" alt="Ennustin" src="/ennustin.svg" />
 
         <p className="py-8 text-center text-2xl">

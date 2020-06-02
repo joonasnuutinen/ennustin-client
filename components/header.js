@@ -8,7 +8,9 @@ function Header({
   navToggled,
   setNavToggled,
 }) {
-  const dashboardStyles = dashboard ? " fixed bg-ennustin-gray" : "";
+  const dashboardStyles = dashboard
+    ? " fixed bg-ennustin-gray"
+    : " absolute top-0 left-0";
   return (
     <header
       className={

@@ -1,6 +1,6 @@
 import { useFetchUser } from "../lib/user";
 import Layout from "../components/layout";
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -45,6 +45,9 @@ function PhenomenaContent({ user }) {
     </>
   );
 }
+PhenomenaContent.propTypes = {
+  user: PropTypes.object,
+};
 
 function Phenomena() {
   const { user, loading } = useFetchUser({ required: true });

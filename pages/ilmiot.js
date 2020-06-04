@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 
-function PhenomenaForm() {
+function PhenomenonForm() {
   const [name, setName] = useState("");
   const [owner, setOwner] = useState("test-1");
 
@@ -50,7 +50,7 @@ function PhenomenaContent({ user }) {
 
       <main>
         <h1>Ilmiöt</h1>
-        <PhenomenaForm />
+        <PhenomenonForm />
       </main>
     </>
   ) : (

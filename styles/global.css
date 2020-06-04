@@ -1,22 +1,21 @@
 @tailwind base;
 
-h1 {
-    @apply text-2xl mb-2;
-}
-
-@tailwind components;
-@tailwind utilities;
-
 body {
     background: #333;
     background: linear-gradient(45deg, #222 0%, #444 100%);
     @apply font-sans;
 }
-
+h1 {
+    @apply text-2xl mb-2;
+}
 a {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
+
+@tailwind components;
+@tailwind utilities;
+
+

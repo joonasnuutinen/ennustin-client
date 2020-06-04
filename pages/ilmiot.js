@@ -3,6 +3,43 @@ import Layout from "../components/layout";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
+
+function PhenomenaForm() {
+  const [name, setName] = useState("");
+  const [owner, setOwner] = useState("test-1");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Nimi: ${name}, Omistaja: ${owner}`);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Nimi
+        <input
+          name="name"
+          type="text"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
+      </label>
+      <label>
+        Omistaja
+        <select
+          value={owner}
+          onChange={(event) => setOwner(event.target.value)}
+        >
+          <option value="test-1">Test 1</option>
+          <option value="test-2">Test 2</option>
+          <option value="test-3">Test 3</option>
+        </select>
+      </label>
+      <input type="submit" value="Tallenna"></input>
+    </form>
+  );
+}
 
 function PhenomenaContent({ user }) {
   return user.isAdmin() ? (
@@ -13,20 +50,7 @@ function PhenomenaContent({ user }) {
 
       <main>
         <h1>Ilmiöt</h1>
-        <form>
-          <label>
-            Nimi
-            <input type="text" />
-          </label>
-          <label>
-            Käyttäjä
-            <select>
-              <option>Test 1</option>
-              <option>Test 2</option>
-              <option>Test 3</option>
-            </select>
-          </label>
-        </form>
+        <PhenomenaForm />
       </main>
     </>
   ) : (

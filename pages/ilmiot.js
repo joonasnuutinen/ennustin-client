@@ -16,18 +16,21 @@ function PhenomenonForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Nimi
+      <p className="mb-4">
+        <label htmlFor="name">Nimi</label>
         <input
+          id="name"
           name="name"
           type="text"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-      </label>
-      <label>
-        Omistaja
+      </p>
+      <p className="mb-4">
+        <label htmlFor="owner">Omistaja</label>
         <select
+          id="owner"
+          name="owner"
           value={owner}
           onChange={(event) => setOwner(event.target.value)}
         >
@@ -35,8 +38,10 @@ function PhenomenonForm() {
           <option value="test-2">Test 2</option>
           <option value="test-3">Test 3</option>
         </select>
-      </label>
-      <input type="submit" value="Tallenna"></input>
+      </p>
+      <p className="my-4">
+        <button type="submit">Lisää</button>
+      </p>
     </form>
   );
 }
